@@ -112,23 +112,6 @@ for mark in marks:
     mark.write()
     print('\n')
 
-# for mark in marks:
-#     filename = ...
-#     mark.write(filename)
-
 for mark in marks:
     print(mark.path)
     EPGMark.from_file(mark.path)
-
-# for datfile in glob.glob('*.dat'):
-#     mark = EPGMark.from_file(datfile)
-
-# # ------------------------
-
-# def find_peaks(raw_data: List[float], ...) -> List[int]:
-#     pass
-
-# mark = EPGMark.from_file(datfile)
-# peak_idxs = find_peaks(mark.raw_data)
-# for i in peak_idxs:
-#     print(i, '=>', mark.raw_data[i], 'V')
